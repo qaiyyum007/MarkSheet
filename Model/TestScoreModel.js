@@ -5,19 +5,7 @@ let TestScore =new  mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Candidate",
   },
-  // first_Round_Num: {
-  //   type: Number,
-  //   // min:0,
-  //   // max:10,
-  //   // // default:0,
-  //    required: true,
-  // },
 
-  // first_Round_Num: {
-  //   type: Number,
-  //    required: true,
-  //    default:false
-  // },
 
   first_round_Num: {
     type: Number,
@@ -39,18 +27,7 @@ let TestScore =new  mongoose.Schema({
     required: true,
   },
 
-  // third_round:{
-  //   type: Number,
-  //   required: true,
-  // },
-
-  // marks: {
-  //   type: Number,
-  //   required: true,
-  //   min:0,
-  //   max:10,
-  //   default:0
-  // },
+  
 
   date: {
     type: Date,
