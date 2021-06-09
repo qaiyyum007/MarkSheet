@@ -184,7 +184,7 @@ class CandidateRouter{
 
 
 
-     this.candidateRouter.put('change_Password/:id' ,async(req,res)=>{
+     this.candidateRouter.put('/change_Password/:id' ,async(req,res)=>{
 
         try {
             const {password}=req.body
@@ -194,7 +194,7 @@ class CandidateRouter{
                 password: hasedPassword
             })
             if(!resetPassword){
-                return res.send("User is not found")
+                return res.send("candidate is not found")
             }
             return res.status(201).send("password change Suceesfull", resetPassword )
 

@@ -168,7 +168,7 @@ this.testScoreRouter.get('/avg_marks_first_round_Num',isAuth ,async(req,res)=>{
 
 
 
-    this.testScoreRouter.get('/avg_marks_third_round_Num',isAuth ,async(req,res)=>{
+    this.testScoreRouter.get('/avg_marks_second_round_Num',isAuth ,async(req,res)=>{
 
         try {
             
@@ -176,7 +176,7 @@ this.testScoreRouter.get('/avg_marks_first_round_Num',isAuth ,async(req,res)=>{
                 {
                   $group: {
                     _id: null,
-                    avgNumber: { $avg: '$third_round_Num' },
+                    avgNumber: { $avg: '$second_round_Num' },
                   },
                 },
                 { $sort: { _id: 1 } },
@@ -208,7 +208,7 @@ this.testScoreRouter.get('/avg_marks_first_round_Num',isAuth ,async(req,res)=>{
                     {
                       $group: {
                         _id: null,
-                        avgNumber: { $avg: '$first_round_Num' },
+                        avgNumber: { $avg: '$third_round_Num' },
                       },
                     },
                     { $sort: { _id: 1 } },
