@@ -11,7 +11,6 @@ import TestScoreRouter from './Router/TestScoreRouter.js'
 dotenv.config()
 const app=express()
 
-//Allows us to use body json thing to create posts
 
 app.use(express.json({ extended: false }));
 
